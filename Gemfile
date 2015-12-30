@@ -14,7 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 3.5', '>= 3.5.3'
-gem 'devise-basecamper', path: '/Users/macbook/Desktop/devise-basecamper'
+gem 'devise-basecamper', '~> 0.5.2'
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
 
 group :development, :test do
