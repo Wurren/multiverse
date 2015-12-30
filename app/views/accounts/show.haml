@@ -1,0 +1,9 @@
+
+%h2= "Signup"
+= simple_form_for @account do |f| 
+    = f.input :subdomain 
+    = f.simple_fields_for :users do |p|
+        = p.input :email, required: true
+        = p.input :password, required: true
+        = p.input :password_confirmation, required: true
+    = f.button :submit 
