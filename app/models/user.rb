@@ -4,7 +4,8 @@ class User < ActiveRecord::Base
             :recoverable, 
             :rememberable, 
             :trackable, 
-            :basecamper
+            :basecamper,
+            :invitable
 
     belongs_to :account
 

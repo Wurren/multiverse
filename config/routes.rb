@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-    skip_these = [:sessions, :passwords, :confirmations, :registrations, :invitation]
+    skip_these = [:sessions, :passwords, :confirmations, :registrations]
 
     constraints subdomain: false do
         root 'home#index'
@@ -23,6 +23,10 @@ Rails.application.routes.draw do
         end
 
         get 'admin/dashboard', to: "admin/dashboard#index"
+
+        namespace :admin do
+            resources :users
+        end
 
     end
 
